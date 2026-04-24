@@ -1,5 +1,5 @@
 {% set name = "lm-sensors" %}
-{% set version = "3.6.0" %}
+{% set version = "3.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V{{ version.replace(".", "-") }}.tar.gz
-  sha256: 0591f9fa0339f0d15e75326d0365871c2d4e2ed8aa1ff759b3a55d3734b7d197
+  sha256: c6a0587e565778a40d88891928bf8943f27d353f382d5b745a997d635978a8f0
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or osx]
 
 requirements:
